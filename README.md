@@ -1,92 +1,78 @@
-BiofilmAI — Machine Learning Research Sandbox & Notebooks
-BiofilmAI is an open‑source scientific machine learning research project dedicated to predicting, modeling, and analyzing biofilm formation.
-This repository contains the core computational research, exploratory data analysis notebooks, and machine learning model training pipelines.
+BiofilmAI — Multimodal Prediction of Biofilm Formation
+BiofilmAI is a scientific machine learning research project focused on predicting biofilm formation using differential gene expression data from the GSE87213 dataset.
+The project integrates microbiology expertise with modern AI workflows and follows a clear, narrative‑driven coding philosophy called Vibe Coding.
 
-To see these models packaged into a live interactive web app with clinical workflow assistants, visit the companion repository: lab-ai-compliance-suite.
+This repository contains the research sandbox: preprocessing, feature engineering, exploratory analysis, and model development.
 
-Computational Directory Structure
-This repository is dedicated entirely to data pipelines, model sandbox development, and scientific exploration:
-
-BiofilmAI/
+🗂️ Project Structure
 notebooks/ — Core machine learning development sandbox
+01_preprocessing.ipynb — Loads raw data, cleans gene expression tables, merges differential expression results, and prepares machine‑learning features.
 
-01_preprocessing.ipynb — Transcript cleanup, normalization, alignment
+02_feature_engineering.ipynb — Constructs engineered features such as interaction terms, ratios, absolute log fold changes, significance flags, and condition‑specific metrics.
 
-02_feature_engineering.ipynb — Biological interaction, ratio, significance metrics
+03_model_training.ipynb — Trains baseline machine‑learning models and evaluates predictive performance.
 
-03_model_training.ipynb — ML training (Logistic Regression, Random Forest)
+data/gene_expression/ — Gene expression datasets
+Includes all transcriptomic files used in the project:
 
-04_feature_importance.ipynb — SHAP + model parameter interpretation
+Biofilm differential expression results
 
-05_gene_level_predictions.ipynb — Single‑gene probability inference pipeline
+Planktonic differential expression results
 
-data/ — Structured research datasets
+Biofilm vs planktonic comparison tables
 
-gene_expression/ — GSE87213 transcriptomic tables
+Cleaned differential expression tables
 
-biofilm_diff_expr.csv
+Machine‑learning feature tables
 
-planktonic_diff_expr.csv
+🧬 Dataset Overview: GSE87213
+Differential gene expression of Pseudomonas aeruginosa ΔPA14_22470 (ΔPA3225) versus wildtype in planktonic and biofilm conditions.
 
-ml_feature_tables.csv
+This dataset provides the biological foundation for BiofilmAI’s predictive modeling pipeline, enabling exploration of:
 
-microscopy_images/ — Raw microscopy images (future expansion)
+biofilm‑specific transcriptional changes
 
-models/ — Saved trained model files (.pkl)
+planktonic vs biofilm contrasts
 
-src/ — Helper utility scripts (future expansion)
+mutant vs wildtype regulatory patterns
 
-README.md — Repository documentation
+🎯 Project Goal
+BiofilmAI aims to build machine‑learning models that predict biofilm formation using:
 
-Scientific Research Roadmap
-Phase 1 — Transcriptomic Machine Learning (Active)
-Machine learning models predict biofilm formation thresholds using differential gene expression data.
+log fold changes
 
-Notebook functions:
+adjusted p‑values
 
-01_preprocessing.ipynb — Clean raw differential expression profiles and align transcript data
+condition‑specific gene expression patterns
 
-02_feature_engineering.ipynb — Engineer biological interaction terms, significance flags, ratio metrics
+engineered biological + statistical features
 
-03_model_training.ipynb — Train classifiers and map feature importance to pathways
+The project demonstrates how biological insight and AI engineering can be combined to understand complex microbial behaviors.
 
-04_feature_importance.ipynb — Analyze SHAP values and model parameters
+🎨 Vibe Coding — Scientific Notebook Philosophy
+BiofilmAI uses Vibe Coding, a narrative‑driven scientific coding style that transforms each notebook into a guided scientific journal entry rather than a block of code.
 
-05_gene_level_predictions.ipynb — Scaled pipeline inference for targeted single‑gene predictions
+Purpose
+To develop clean, intuitive, and expressive coding habits while working through preprocessing, feature engineering, and model training.
 
-Phase 2 — BiofilmNN Deep Learning (Upcoming)
-A convolutional deep learning pipeline for analyzing CLSM, SEM, and fluorescence microscopy images.
+Core Principles
+Write code in clear narrative steps
 
-Planned notebooks:
+Use microbiology‑friendly variable names
 
-Dual‑channel preprocessing
+Visualize intermediate results for intuition
 
-Biomass segmentation
+Maintain consistent formatting and structure
 
-Live/dead ratio extraction
+Keep functions small, readable, and purposeful
 
-Surface roughness quantification
+End each notebook with a summary block
 
-Phase 3 — Multimodal Fusion (Planned)
-A unified early‑ and late‑stage fusion framework combining transcriptomic features with microscopy‑derived morphological features.
+Make the workflow accessible to scientists learning AI
 
-Planned notebooks:
+Applied In
+01_preprocessing.ipynb
 
-Feature vector concatenation
+02_feature_engineering.ipynb
 
-Cross‑modal normalization
-
-Comparative multimodal classifier evaluation
-
-Scientific Notebook Philosophy (“Vibe Coding”)
-BiofilmAI uses a narrative‑driven scientific coding style:
-
-Narrative‑Driven Steps — Markdown explains biological assumptions and pipeline logic
-
-Domain‑Friendly Naming — Variables reflect biological meaning
-
-Intermediate Visual Intuition — Frequent plots and previews validate transformations
-
-Purpose‑Driven Code Blocks — Small, modular, readable functions
-
-Scientific Closures — Each notebook ends with a “Summary of Discoveries”
+03_model_training.ipynb
