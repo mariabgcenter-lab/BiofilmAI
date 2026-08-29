@@ -6,6 +6,7 @@ This repository contains the research sandbox: preprocessing, feature engineerin
 
 🗂️ Project Structure
 notebooks/ — Core machine learning development sandbox
+
 01_preprocessing.ipynb — Loads raw data, cleans gene expression tables, merges differential expression results, and prepares machine‑learning features.
 
 02_feature_engineering.ipynb — Constructs engineered features such as interaction terms, ratios, absolute log fold changes, significance flags, and condition‑specific metrics.
