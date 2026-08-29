@@ -31,6 +31,7 @@ BiofilmAI/
 │
 └── README.md                       # Repository documentation
 
+
 🧬 Scientific Research Roadmap
 Phase 1: Project A — Transcriptomic Machine Learning (Active)
 Predicts biofilm formation thresholds using gene expression data from the public GSE87213 dataset, studying Pseudomonas aeruginosa ΔPA14_22470 (ΔPA3225) versus wildtype strains across planktonic and biofilm conditions.
