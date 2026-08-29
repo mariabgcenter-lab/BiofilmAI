@@ -9,27 +9,26 @@ To see these models packaged into a live interactive web app with clinical compl
 This repository is dedicated entirely to data pipelines, model sandbox development, and scientific exploration:
 
 BiofilmAI/
-│
-├── notebooks/                      # Core machine learning development sandbox
-│   ├── 01_preprocessing.ipynb          # Transcript cleanup, normalization, alignment
-│   ├── 02_feature_engineering.ipynb    # Biological interaction, ratio, significance metrics
-│   ├── 03_model_training.ipynb         # ML training (Logistic Regression, Random Forest)
-│   ├── 04_feature_importance.ipynb     # SHAP + model parameter interpretation
-│   └── 05_gene_level_predictions.ipynb # Single‑gene probability inference pipeline
-│
-├── data/                           # Structured research datasets
-│   ├── gene_expression/               # GSE87213 transcriptomic tables
-│   │   ├── biofilm_diff_expr.csv
-│   │   ├── planktonic_diff_expr.csv
-│   │   └── ml_feature_tables.csv
-│   │
-│   └── microscopy_images/             # Raw microscopy images (future expansion)
-│
-├── models/                         # Saved trained model files (.pkl)
-│
-├── src/                            # Helper utility scripts (future expansion)
-│
-└── README.md                       # Repository documentation
+notebooks/                      # Core machine learning development sandbox
+01_preprocessing.ipynb          # Transcript cleanup, normalization, alignment
+02_feature_engineering.ipynb    # Biological interaction, ratio, significance metrics
+03_model_training.ipynb         # ML training (Logistic Regression, Random Forest)
+04_feature_importance.ipynb     # SHAP + model parameter interpretation
+05_gene_level_predictions.ipynb # Single‑gene probability inference pipeline
+
+data/                           # Structured research datasets
+gene_expression/               # GSE87213 transcriptomic tables
+biofilm_diff_expr.csv
+planktonic_diff_expr.csv
+ml_feature_tables.csv
+
+microscopy_images/             # Raw microscopy images (future expansion)
+
+models/                         # Saved trained model files (.pkl)
+
+src/                            # Helper utility scripts (future expansion)
+
+README.md                       # Repository documentation
 
 🧬 Scientific Research Roadmap
 Phase 1: Project A — Transcriptomic Machine Learning (Active)
