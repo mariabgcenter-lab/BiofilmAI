@@ -78,7 +78,7 @@ Cross‑modal normalization
 
 Comparative multimodal classifier evaluation
 
-🧪 Scientific Notebook Philosophy (“Vibe Coding”)
+Scientific Notebook Philosophy (“Vibe Coding”)
 BiofilmAI uses a narrative‑driven scientific coding style:
 
 Narrative‑Driven Steps — Markdown explains biological assumptions and pipeline logic
