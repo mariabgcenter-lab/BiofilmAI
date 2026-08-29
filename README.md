@@ -5,9 +5,6 @@ BiofilmAI is an open-source scientific machine learning research project dedicat
 
 To see these models packaged into a live interactive web app with clinical compliance assistants, visit the companion repository: lab-ai-compliance-suite.
 
-Live Interactive App:
-https://lab-ai-compliance-suite-icr9e9zehffzgw8qj4fdb2.streamlit.app/
-
 🗂️ Computational Directory Structure
 This repository is dedicated entirely to data pipelines, model sandbox development, and scientific exploration:
 
@@ -69,12 +66,6 @@ jupyter lab
 📬 Academic & Professional Profiles
 Explore my peer-reviewed publications, open-source code repositories, and professional networks:
 
-Portfolio Showcase: Maria BG Scientific Portfolio
-ORCID: 0000-0002-7525-4262
-Google Scholar: Maria BG Profile
-LinkedIn: maria-burgos-garay
-GitHub: mariabgcenter-lab
-© 2026 Maria BG Scientific. Developed under an agile, open-science model at the intersection of advanced microbiology, clinical data standards, and AI-driven biological discovery.
 
-Good content
-Bad c
+
+
